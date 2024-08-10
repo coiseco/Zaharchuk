@@ -1,0 +1,82 @@
+.presentation-inner {
+  @include inner;
+  position: relative;
+}
+
+.presentation-background-one {
+  position: absolute;
+  left: 598px;
+  top: 138px;
+  width: 550px;
+  height: 550px;
+  // background-image: url(/www/images/Ellipse.png);
+}
+
+.one-img {
+  width: 550px;
+  height: 550px;
+}
+
+.presentation-backround-two {
+  position: absolute;
+  top: 876px;
+  width: 1180px;
+  height: 1436px;
+}
+
+.two-img {
+  width: 1180px;
+  height: 1436px;
+}
+
+.presentation-title-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.presentation-pre-title {
+  font-size: 26px;
+  line-height: 33px;
+  margin: 93px 0 15px 0;
+}
+
+.presentation-title-name {
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 140px;
+  text-align: center;
+  margin: 0;
+}
+
+.title-image {
+  margin-top: 50px;
+}
+
+
+.presentation-title {
+  display: block;
+  margin: 200px 0;
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 140px;
+  text-align: center;
+}
+
+.title-about-me {
+  margin-bottom: 100px;
+}
+
+.presentation-text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+}

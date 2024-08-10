@@ -1,0 +1,142 @@
+.study-inner {
+  @include inner;
+}
+
+.study-title {
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 320px 0 100px 0;
+}
+
+.study-wraper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis:50%;
+
+}
+
+.block {
+  position: relative;
+  width: 570px;
+  height: 450px;
+
+
+  &:nth-child(1) {
+    margin-right: 20px;
+    margin-bottom: 55px;
+    background-image: url(/images/videobomb.png);
+    background-size: cover;
+
+  }
+
+  &:nth-child(2) {
+    margin-left: 20px;
+    margin-bottom: 55px;
+    background-image: url(/images/mentor.png);
+    background-size: cover;
+  }
+
+  &:nth-child(3) {
+    margin-right: 20px;
+    background-image: url(/images/last.png);
+    background-size: cover;
+  }
+
+  &:nth-child(4) {
+    margin-left: 20px;
+    background-image: url(/images/consult.png);
+    background-size: cover;
+  }
+
+
+}
+
+.study-text {
+  position: absolute;
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+  color: #EBEEE8;
+  margin: 0;
+
+
+  &.fi{
+    top: 15px;
+    left: 15px;
+    text-align: left;
+  }
+  &.second{
+    text-align: right;
+    top: 15px;
+    right: 15px;
+  }
+  &.th{
+    text-align: left;
+    bottom: 15px;
+    left: 15px;
+  }
+  &.four{
+    text-align: right;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+.block-hover {
+  display: none;
+}
+
+.visible {
+
+  position: relative;
+  z-index: 20000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #DBC3B2;
+  animation: showBottom 1.5s;
+  animation-fill-mode: forwards;
+
+  @keyframes showBottom {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+
+    // 30%{opacity: 0.1}
+  }
+
+  // bottom:-100%
+  // bottom:0%;
+
+
+}
+
+.block-hover-link {
+  font-family: 'Foglihten';
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  margin: 185px 0 30px 0;
+  text-decoration: none;
+  color: black;
+
+
+  &:hover {
+    transition: 1s;
+    transform: scale(1.2);
+  }
+}

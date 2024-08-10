@@ -1,0 +1,211 @@
+.services-inner {
+  @include inner;
+  position: relative;
+}
+
+
+.services-img-box {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
+.services-wraper {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-title {
+  text-align: center;
+  margin: 200px 0 100px 0;
+  font-family: 'Foglihten';
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  letter-spacing: 0.03em;
+
+}
+
+
+.services-description-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(219, 195, 178, 1);
+}
+
+
+.services-description-title {
+  font-family: 'Foglihten';
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  margin: 73px 0 30px 0;
+  text-decoration: none;
+  color: black;
+
+  &:hover{
+    transition: 1s;
+    transform: scale(1.2);
+  }
+
+}
+
+.services-description-arrow {
+  margin-bottom: 70px;
+}
+
+.services-blocks {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.block1 {
+  position: relative;
+  background-image: url("/images/classic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 450px;
+  margin-right: 20px;
+  margin-top: 40px;
+
+}
+
+.block-hover1,
+.block-hover2,
+.block-hover3,
+.block-hover4 {
+  display: none;
+}
+
+.visible {
+  position: relative;
+  z-index: 20000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid #eb0808;
+  width: 100%;
+  height: 100%;
+  background-color: #DBC3B2;
+  animation: showBottom 1.5s;
+  animation-fill-mode: forwards;
+
+  @keyframes showBottom {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+
+    // 30%{opacity: 0.1}
+  }
+
+  // bottom:-100%
+  // bottom:0%;
+
+
+}
+
+.block-hover-link {
+  font-family: 'Foglihten';
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  margin: 185px 0 30px 0;
+  text-decoration: none;
+  color: black;
+
+
+  &:hover {
+    transition: 1s;
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+.block2 {
+  position: relative;
+  background-image: url("/images/reels.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 450px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.block3 {
+  position: relative;
+  background-image: url("/images/social.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 450px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+.block4 {
+  position: relative;
+  background-image: url("/images/videos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 450px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+
+.block-text {
+  position: absolute;
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 33px;
+  color: #EBEEE8;
+  margin: 0;
+
+
+  &.one {
+    top: 15px;
+    left: 15px;
+  }
+
+
+  &.two {
+    top: 15px;
+    left: 425px;
+  }
+
+
+  &.three {
+    top: 336px;
+    bottom: 15px;
+    left: 15px;
+  }
+
+
+  &.four {
+    top: 336px;
+    bottom: 15px;
+    left: 377px;
+    right: 15px;
+  }
+
+
+
+}

@@ -1,0 +1,153 @@
+.slider-inner {
+  @include inner;
+  padding-bottom: 50px;
+}
+
+.slider-title {
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 41px;
+  line-height: 52px;
+  letter-spacing: 0.03em;
+  margin: 55px 0 102px 0;
+}
+
+.slider-wraper.slick-initialized.slick-slider.slick-dotted {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slider-item.slick-slide.slick-current.slick-active {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  width: 550px;
+}
+
+.slider-item.slick-slide.slick-cloned {
+  width: 550px;
+}
+
+[aria-label="Previous"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-image: url(/images/right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  font-size: 0;
+  border: none;
+  transform: rotate(180deg);
+  z-index: 10000;
+  cursor: pointer;
+}
+
+[aria-label="Next"] {
+  position: absolute;
+  left: 1080px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-image: url(/images/right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  font-size: 0;
+  border: none;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.slick-dots{
+  position: absolute;
+  top: 503px;
+  left: 489px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  z-index: 100000;
+  li{
+    margin: 0 5px;
+  }
+
+  .slick-active{
+
+    button{
+     background-color: black;
+
+    }
+  }
+
+  button{
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    font-size: 0;
+    border-radius: 50%;
+    border: none;
+    background: gray ;
+
+  }
+
+}
+
+
+
+.slider-img {
+  width: 440px;
+  height: 315px;
+  padding: 93px 55px;
+  background-color: #DBC3B2;
+  border-radius: 50px;
+
+  &.small {
+    height: 90px;
+    margin: 112px auto;
+  }
+
+  &.medium {
+    height: 135px;
+    margin: 67px auto;
+  }
+}
+
+.slider-inst-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 451px;
+  left: 712px;
+
+}
+
+.slider-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+}
+
+.slider-inst-arrow {
+  width: 20px;
+  height: 9px;
+  padding-top: 6px;
+  margin-left: 8px;
+
+}

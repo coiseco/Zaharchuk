@@ -1,0 +1,85 @@
+.footer{
+  margin-top: 211px;
+}
+
+.footer-inner {
+  @include inner;
+}
+
+.footer-title {
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+}
+
+.footer-wrapper {
+  position: relative;
+  width: 775px;
+  display: flex;
+  flex-direction: row;
+  margin: 100px 412px 200px 233px;
+}
+
+.footer-list{
+  margin-right: 245px;
+  padding: 0;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.footer-list-item {
+  list-style-type: none;
+  margin-bottom: 13px;
+
+}
+
+.footer-link {
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.footer-hr{
+  margin: 0;
+  background-color: black;;
+  border: 2px solid black;
+  margin-bottom: 40px;
+}
+
+.footer-img{
+  width: 41px;
+  height: 52px;
+  position: absolute;
+
+  &:nth-child(1){
+    top: 32px;
+    left: 701px;
+  }
+
+  &:nth-child(2){
+    top: 32px;
+    left:239px;
+  }
+
+  &:nth-child(3){
+    top: 141px;
+    left: 239px;
+  }
+
+  &:nth-child(4){
+    top: 141px;
+    left: 701px;
+  }
+}

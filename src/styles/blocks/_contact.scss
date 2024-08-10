@@ -1,0 +1,89 @@
+.contacts {
+  background-color: #DBC3B2;
+  height: 1028px;
+  margin-top: 200px;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1180px;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact-title {
+  font-family: 'Foglihten';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 229px 0 238px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column
+}
+
+
+
+.form-input {
+  width: 569px;
+  height: 60px;
+  margin-bottom: 20px;
+  background-color: inherit;
+  border: 1px solid #5B5B5B;
+  font-size: 20px;
+  line-height: 15px;
+  color: #050505;
+  padding-left: 10px;
+}
+
+.form-checkbox {
+  font-size: 12px;
+  line-height: 15px;
+  color: #050505;
+  opacity: 0.5;
+}
+
+.checkbox-text {
+  padding-left: 4px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #050505;
+  opacity: 0.5;
+}
+
+.form-link {
+  font-size: 12px;
+  line-height: 15px;
+  color: #050505;
+}
+
+.form-button {
+  width: 175px;
+  margin-top: 23px;
+  padding: 16px 44px;
+  border-radius: 50px;
+  background-color:inherit;
+  cursor: pointer;
+}
+
+
+.contact-img {
+  position: absolute;
+  top: 0;
+  left: 760px;
+}

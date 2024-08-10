@@ -2,6 +2,21 @@
 @import "common/_variables";
 @import "common/_fonts";
 @import "common/_common";
+@import "common/_mixins";
+@import "common/_reset";
+
+
+//plugins
+@import "plugins/slick";
+
 
 // blocks
 @import "blocks/_promo";
+@import "blocks/_header";
+@import "blocks/_presentation";
+@import "blocks/_services";
+@import "blocks/_slider";
+@import "blocks/_study";
+@import "blocks/_questions";
+@import "blocks/_contact";
+@import "blocks/_footer";
