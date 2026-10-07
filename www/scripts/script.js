@@ -12,8 +12,9 @@
     });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && menu.open) {
+        var inside = menu.contains(document.activeElement);
         menu.open = false;
-        if (summary) summary.focus();
+        if (summary && inside) summary.focus();
       }
     });
     document.addEventListener('click', function (e) {
@@ -83,11 +84,17 @@
     var fallback = function () {
       selectNote();
       var ok = false;
+      var onCopy = function (e) {
+        e.clipboardData.setData('text/plain', briefText());
+        e.preventDefault();
+      };
+      document.addEventListener('copy', onCopy);
       try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+      document.removeEventListener('copy', onCopy);
       if (ok) {
         say('Скопировано', 2400, 'Шаблон брифа скопирован');
       } else {
-        say('Выделите текст ниже', 4000);
+        say('Выделите текст ниже', 4000, 'Не удалось скопировать автоматически, выделите текст шаблона ниже');
         note.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
       }
     };

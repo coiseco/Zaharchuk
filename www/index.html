@@ -16,10 +16,10 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
+<body id="top">
   <a class="skip" href="#main">К содержанию</a>
 
-  <header class="header" id="top">
+  <header class="header">
     <div class="container header__bar">
       <a class="wordmark" href="#top">Катя Захарчук</a>
 
@@ -30,46 +30,42 @@
         <a class="nav__link" href="#about">Обо мне</a>
       </nav>
 
-      <a class="btn btn--outline header__dm js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать</a>
+      <a class="btn btn--outline header__dm js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать<span class="sr-only"> (откроется в новой вкладке)</span></a>
 
       <details class="menu">
         <summary class="menu__btn">Меню</summary>
-        <div class="menu__panel">
+        <nav class="menu__panel" aria-label="Меню">
           <a href="#work">Работы</a>
           <a href="#formats">Форматы</a>
           <a href="#terms">Условия</a>
           <a href="#about">Обо мне</a>
-        </div>
+        </nav>
       </details>
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
 
     <!-- ПЕРВЫЙ ЭКРАН: контактный лист -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__text">
-          <h1 class="hero__h1">Снимаю для брендов одежду, предметку и&nbsp;образы</h1>
+          <h1 class="hero__h1">Снимаю для&nbsp;брендов одежду, предметку и&nbsp;образы</h1>
           <p class="hero__lead">Катя Захарчук, UGC-креатор и&nbsp;стилист. Нячанг и&nbsp;Петербург.</p>
           <div class="hero__buttons">
-            <a class="btn btn--primary js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ</a>
+            <a class="btn btn--primary js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ<span class="sr-only"> (откроется в новой вкладке)</span></a>
             <a class="btn btn--outline" href="#work">Смотреть примеры</a>
           </div>
           <div class="hero__facts">
-            <p>Отвечаю пн–пт,&nbsp;12:00–20:00.</p>
+            <p>Отвечаю в&nbsp;директ Instagram* <span class="nb" lang="en" translate="no">@pr.zezekate</span>, <span class="nb">пн–пт, 12:00–20:00</span>.</p>
             <p>Принимаю предложения с&nbsp;доставкой зарубеж или от&nbsp;брендов, которые находятся во&nbsp;Вьетнаме.</p>
             <p>Цены и&nbsp;права на&nbsp;использование пришлю по&nbsp;запросу.</p>
           </div>
-          <div class="hero__brands">
-            <p class="cap">(в профиле на Behance)</p>
-            <p class="brands">THE SELECT, PIMS, TOPTOP, LOOKONLINE</p>
-          </div>
         </div>
 
-        <figure class="fr" style="--i:0"><img src="images/work/portrait-blouse.jpg" width="356" height="393" alt="Портрет в белой блузе с чёрным корсетом" fetchpriority="high"></figure>
-        <figure class="fr" style="--i:1"><img src="images/work/black-coat.jpg" width="356" height="393" alt="Чёрное пальто и высокие сапоги, образ на уличном стуле"></figure>
-        <figure class="fr" style="--i:2"><img src="images/work/flatlay-tee.jpg" width="356" height="393" alt="Белая футболка, украшения и сумка, вид сверху"></figure>
+        <figure class="fr" style="--i:0"><img src="images/work/corset-blouse.jpg" width="356" height="393" alt="Блуза с корсетом и солнцезащитные очки на фоне деревянных дверей" fetchpriority="high"></figure>
+        <figure class="fr" style="--i:1"><img src="images/work/black-coat.jpg" width="356" height="393" alt="Чёрное пальто, шляпа и высокие сапоги, образ на уличном стуле"></figure>
+        <figure class="fr" style="--i:2"><img src="images/work/flatlay-tee.jpg" width="356" height="393" alt="Белая футболка с принтом, очки, украшения и бордовая сумка, вид сверху"></figure>
         <figure class="fr" style="--i:3"><img src="images/work/garden-skirt.jpg" width="356" height="393" alt="Чёрная объёмная юбка и топ у канала в саду"></figure>
         <figure class="fr" style="--i:4"><img src="images/work/corset-clutch.jpg" width="356" height="393" alt="Корсет, белая юбка и чёрный клатч"></figure>
         <figure class="fr fr--cap" style="--i:5">
@@ -87,12 +83,16 @@
         </figure>
         <figure class="fr" style="--i:8"><img src="images/work/steps.jpg" width="356" height="393" alt="Белая блуза и чёрные сапоги на каменных ступенях" loading="lazy"></figure>
         <figure class="fr fr--tab" style="--i:9"><img src="images/work/blazer.jpg" width="356" height="393" alt="Чёрный жакет, широкие брюки и ботинки" loading="lazy"></figure>
-        <figure class="fr fr--tab" style="--i:10"><img src="images/work/phone-hand.jpg" width="356" height="393" alt="Рука с телефоном на белой простыне" loading="lazy"></figure>
+        <figure class="fr fr--tab" style="--i:10"><img src="images/work/white-set.jpg" width="356" height="393" alt="Белая футболка, белые брюки и чёрная сумка" loading="lazy"></figure>
         <figure class="fr fr--tab" style="--i:11"><img src="images/work/black-sleeves.jpg" width="356" height="393" alt="Широкие чёрные рукава, кольца и сумка" loading="lazy"></figure>
-        <figure class="fr fr--desk" style="--i:12"><img src="images/work/hat-bag.jpg" width="356" height="393" alt="Белая рубашка и чёрная сумка на фоне серой ставни" loading="lazy"></figure>
-        <figure class="fr fr--desk" style="--i:13"><img src="images/work/pavilion.jpg" width="356" height="393" alt="Образ в чёрном в беседке" loading="lazy"></figure>
+        <figure class="fr fr--desk" style="--i:12"><img src="images/work/hat-bag.jpg" width="356" height="393" alt="Белая рубашка, чёрная шляпа и чёрная сумка, позади серые рольставни" loading="lazy"></figure>
+        <figure class="fr fr--desk" style="--i:13"><img src="images/work/pavilion.jpg" width="356" height="393" alt="Чёрное длинное платье с разрезом и чёрная сумка с бусинами в деревянной беседке" loading="lazy"></figure>
 
         <p class="sheet-cap cap">(не скучные образы и идеи контента)</p>
+        <div class="hero__brands">
+          <p class="cap">(бренды из моего профиля на Behance)</p>
+          <p class="brands" lang="en" translate="no">THE SELECT, PIMS, TOPTOP, LOOKONLINE</p>
+        </div>
       </div>
     </section>
 
@@ -104,12 +104,12 @@
             <h2 class="h2" id="work-h">Примеры работ для брендов</h2>
             <p class="cap">(12 проектов с моего Behance)</p>
           </div>
-          <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance</a>
+          <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance<span class="sr-only"> (откроется в новой вкладке)</span></a>
         </div>
 
         <div class="group">
           <p class="cap group__cap">(одежда)</p>
-          <ul class="cases">
+          <ul class="cases" role="list">
             <li class="case">
               <img src="images/cases/revolte.jpg" width="808" height="632" alt="Белая рубашка с корсетным поясом и юбка, кейс Revolte" loading="lazy">
               <p class="case__name">Revolte</p><p class="case__fmt">UGC для бренда одежды</p>
@@ -131,9 +131,9 @@
 
         <div class="group">
           <p class="cap group__cap">(бельё, купальники, сумки)</p>
-          <ul class="cases">
+          <ul class="cases" role="list">
             <li class="case">
-              <img src="images/cases/lalama.jpg" width="808" height="632" alt="Красное бельё на белой стене, кейс LaLama" loading="lazy">
+              <img src="images/cases/lalama.jpg" width="808" height="632" alt="Красное бельё, кольцо и тюбик в бежевой раковине у хромированного смесителя, кейс LaLama" loading="lazy">
               <p class="case__name">LaLama</p><p class="case__fmt">UGC, бельё</p>
             </li>
             <li class="case">
@@ -141,11 +141,11 @@
               <p class="case__name">Kojinka</p><p class="case__fmt">UGC для бренда сумок</p>
             </li>
             <li class="case">
-              <img src="images/cases/swimwear.jpg" width="808" height="632" alt="Купальник и чёрный жакет у скалы" loading="lazy">
+              <img src="images/cases/swimwear.jpg" width="808" height="632" alt="Купальник со змеиным принтом, белые широкие шорты, чёрные сапоги и чёрная куртка у скалы" loading="lazy">
               <p class="case__name">Купальники</p><p class="case__fmt">UGC</p>
             </li>
             <li class="case">
-              <img src="images/cases/creative-dresses.jpg" width="808" height="632" alt="Серое платье с кружевом и надпись «бельевые платья»" loading="lazy">
+              <img src="images/cases/creative-dresses.jpg" width="808" height="632" alt="Нарисованное серое платье с кружевом и надпись «бельевые платья»" loading="lazy">
               <p class="case__name">Бельевые платья</p><p class="case__fmt">Креатив UGC</p>
             </li>
           </ul>
@@ -153,7 +153,7 @@
 
         <div class="group">
           <p class="cap group__cap">(предметка, food, коллажи, нейро)</p>
-          <ul class="cases">
+          <ul class="cases" role="list">
             <li class="case">
               <img src="images/cases/objects.jpg" width="808" height="632" alt="Предметная съёмка: украшения и аксессуары на тёмном фоне" loading="lazy">
               <p class="case__name">Предметка</p><p class="case__fmt">UGC, предметные фото</p>
@@ -176,7 +176,7 @@
           </ul>
         </div>
 
-        <p class="work__foot"><a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance</a></p>
+        <p class="work__foot"><a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance<span class="sr-only"> (откроется в новой вкладке)</span></a></p>
       </div>
     </section>
 
@@ -184,7 +184,7 @@
     <section class="section" id="formats" aria-labelledby="formats-h">
       <div class="container formats">
         <h2 class="h2" id="formats-h">Форматы</h2>
-        <ul class="formats__list">
+        <ul class="formats__list" role="list">
           <li class="format">
             <img class="format__img" src="images/work/white-set.jpg" width="356" height="393" alt="" loading="lazy">
             <div><h3 class="h3">Образы на мне</h3><p class="format__line">Одежда, бельё, купальники, сумки.</p></div>
@@ -223,19 +223,18 @@
         <h2 class="h2" id="terms-h">Условия и порядок работы</h2>
 
         <div class="statements">
-          <p class="statement">Отвечаю пн–пт,&nbsp;12:00–20:00.</p>
+          <p class="statement">Отвечаю <span class="nb">пн–пт, 12:00–20:00</span>.</p>
           <p class="statement">Принимаю предложения с&nbsp;доставкой зарубеж или от&nbsp;брендов, которые находятся во&nbsp;Вьетнаме.</p>
           <p class="statement">Цены и&nbsp;права на&nbsp;использование пришлю по&nbsp;запросу.</p>
         </div>
 
         <h3 class="h3 steps__h">Как проходит работа</h3>
-        <ol class="steps">
-          <li class="step"><span class="step__n" aria-hidden="true">1</span><p>Пишете в&nbsp;директ <span class="nb">@pr.zezekate</span>: бренд, товар, что нужно.</p></li>
+        <ol class="steps" role="list">
+          <li class="step"><span class="step__n" aria-hidden="true">1</span><p>Пишете в&nbsp;директ <span class="nb" lang="en" translate="no">@pr.zezekate</span>: бренд, товар, что нужно. <a class="link" href="#brief">Шаблон брифа</a> ниже.</p></li>
           <li class="step"><span class="step__n" aria-hidden="true">2</span><p>Обсуждаем формат, срок и&nbsp;цену.</p></li>
           <li class="step"><span class="step__n" aria-hidden="true">3</span><p>Отправляете товар.</p></li>
           <li class="step"><span class="step__n" aria-hidden="true">4</span><p>Снимаю и&nbsp;показываю результат.</p></li>
         </ol>
-        <p class="marking">Платные и&nbsp;бартерные размещения маркирую по&nbsp;закону: пометка «Реклама», данные рекламодателя и&nbsp;erid.</p>
       </div>
     </section>
 
@@ -249,24 +248,24 @@
 
         <div class="about__frames">
           <div class="about__row">
-            <figure class="fr-static"><img src="images/work/portrait-robe.jpg" width="356" height="393" alt="Образ в чёрном халате с оранжевой сумочкой" loading="lazy"></figure>
-            <figure class="fr-static"><img src="images/work/beach-dress.jpg" width="356" height="393" alt="Белое платье с воланами у моря" loading="lazy"></figure>
-            <figure class="fr-static"><img src="images/work/shutter.jpg" width="356" height="393" alt="Чёрная футболка, шорты и ботинки у серой ставни" loading="lazy"></figure>
+            <figure class="fr-static"><img src="images/work/portrait-robe.jpg" width="356" height="393" alt="Чёрный халат и оранжевый мешочек на синем шнурке, селфи в зеркале" loading="lazy"></figure>
+            <figure class="fr-static"><img src="images/work/beach-dress.jpg" width="356" height="393" alt="Кремовое ярусное платье у моря" loading="lazy"></figure>
+            <figure class="fr-static"><img src="images/work/shutter.jpg" width="356" height="393" alt="Чёрная футболка с принтом, шорты и ботильоны, позади серые рольставни" loading="lazy"></figure>
           </div>
           <p class="cap">(со мной вдохновляйся, наряжайся и снимай)</p>
         </div>
 
-        <ul class="about__links">
+        <ul class="about__links" role="list">
           <li>
-            <a class="link link--tap" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener noreferrer">Instagram* @zezekate.e</a>
+            <a class="link link--tap" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener noreferrer">Instagram* @zezekate.e<span class="sr-only"> (откроется в новой вкладке)</span></a>
             <p class="cap">(личный блог)</p>
           </li>
           <li>
-            <a class="link link--tap" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Instagram* @pr.zezekate</a>
+            <a class="link link--tap" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Instagram* @pr.zezekate<span class="sr-only"> (откроется в новой вкладке)</span></a>
             <p class="cap">(для сотрудничеств)</p>
           </li>
           <li>
-            <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Behance<span class="sr-only"> (откроется в новой вкладке)</span></a>
             <p class="cap">(все проекты)</p>
           </li>
         </ul>
@@ -278,17 +277,17 @@
       <div class="container contact">
         <div class="contact__text">
           <h2 class="h2" id="contact-h">Напишите в директ</h2>
-          <p class="lead">Мой рабочий аккаунт для сотрудничеств в&nbsp;Instagram*: <span class="nb">@pr.zezekate</span>. Отвечаю пн–пт,&nbsp;12:00–20:00.</p>
+          <p class="lead">Мой рабочий аккаунт для сотрудничеств в&nbsp;Instagram*: <span class="nb" lang="en" translate="no">@pr.zezekate</span>. Отвечаю <span class="nb">пн–пт, 12:00–20:00</span>.</p>
           <p class="cap">(формы нет, пишите в директ)</p>
           <div class="contact__buttons">
-            <a class="btn btn--primary js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ</a>
+            <a class="btn btn--primary js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ<span class="sr-only"> (откроется в новой вкладке)</span></a>
             <button class="btn btn--outline" id="copy-brief" type="button" hidden>Скопировать шаблон брифа</button>
           </div>
           <p class="sr-only" id="brief-live" aria-live="polite"></p>
         </div>
 
         <div class="contact__note">
-          <p class="cap">(шаблон брифа, можно вставить в директ)</p>
+          <p class="cap">(шаблон брифа: скопируйте и вставьте в директ)</p>
           <div class="note" id="brief">
             <p>Привет, Катя!</p>
             <p>Меня зовут: ______</p>
@@ -299,7 +298,7 @@
             <p>Товар отправим (как и куда): ______</p>
             <p>Где будем использовать (соцсети, реклама, сайт): ______</p>
           </div>
-          <p><a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance</a></p>
+          <p><a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance<span class="sr-only"> (откроется в новой вкладке)</span></a></p>
         </div>
       </div>
     </section>
@@ -309,19 +308,19 @@
   <footer class="footer">
     <div class="container">
       <p class="footer__links">
-        <a class="link link--tap" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener noreferrer">Instagram* @zezekate.e</a>
-        <a class="link link--tap" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Instagram* @pr.zezekate</a>
-        <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Behance</a>
+        <a class="link link--tap" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener noreferrer">Instagram* @zezekate.e<span class="sr-only"> (откроется в новой вкладке)</span></a>
+        <a class="link link--tap" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Instagram* @pr.zezekate<span class="sr-only"> (откроется в новой вкладке)</span></a>
+        <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Behance<span class="sr-only"> (откроется в новой вкладке)</span></a>
       </p>
-      <p class="cap">Названия брендов приведены, чтобы указать выполненные работы. Права на&nbsp;них принадлежат правообладателям, упоминание не&nbsp;означает рекомендации или одобрения.</p>
+      <p class="cap">Названия брендов приведены только для указания выполненных работ. Права на&nbsp;них принадлежат правообладателям. Это не&nbsp;значит, что бренды рекомендуют меня или одобряют этот сайт.</p>
       <p class="cap">* Instagram принадлежит компании Meta, признанной в&nbsp;РФ экстремистской организацией и&nbsp;запрещённой.</p>
       <p class="cap">© 2026 Екатерина Захарчук</p>
     </div>
   </footer>
 
-  <div class="mbar" id="mbar">
-    <a class="btn btn--primary btn--block js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ</a>
-  </div>
+  <aside class="mbar" id="mbar" aria-label="Быстрая связь">
+    <a class="btn btn--primary btn--block js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ<span class="sr-only"> (откроется в новой вкладке)</span></a>
+  </aside>
 
   <script src="scripts/script.js"></script>
 </body>
