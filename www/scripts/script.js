@@ -29,19 +29,7 @@
     if (e.key === 'Escape') setMenu(false);
   });
 
-  // Таймкод в видоискателе героя
-  var tc = document.getElementById('timecode');
-  if (tc && !reduce) {
-    var t = 0;
-    setInterval(function () {
-      t += 1;
-      var m = String(Math.floor(t / 60) % 60).padStart(2, '0');
-      var s = String(t % 60).padStart(2, '0');
-      tc.textContent = '00:' + m + ':' + s;
-    }, 1000);
-  }
-
-  // Услуги: арка с кадром следует за курсором
+  // Услуги: кадр следует за курсором
   var list = document.getElementById('svc');
   var preview = document.getElementById('preview');
   var canHover = window.matchMedia('(hover: hover) and (min-width: 861px)');
@@ -76,7 +64,7 @@
   // Появление блоков при прокрутке. Без IntersectionObserver всё остаётся видимым.
   if ('IntersectionObserver' in window && !reduce) {
     var targets = document.querySelectorAll(
-      '.head, .about__text, .about__photo, .about__brands, .quote, .course, .faq__title, .qa, .contact__copy, .contact__photo, .footer__title'
+      '.head, .about__lead, .about__text, .about__brands, .quote, .course, .faq__title, .qa, .contact__copy, .contact__photo, .footer__title'
     );
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
