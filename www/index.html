@@ -4,9 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Екатерина Захарчук — UGC, креатор, стилист</title>
-  <meta name="description" content="Екатерина Захарчук: UGC для брендов, креативная съёмка, рилс под ключ. Обучение видеомейкингу и менторство для экспертов.">
-  <meta name="theme-color" content="#0c0c0b">
+  <title>Катя Захарчук, UGC-креатор и стилист. Съёмка для брендов</title>
+  <meta name="description" content="Катя Захарчук снимает для брендов одежду, предметку и образы. UGC-креатор и стилист, Нячанг и Петербург. Работы, форматы, условия и как написать.">
+  <meta name="theme-color" content="#EFEFEC">
+  <meta property="og:title" content="Катя Захарчук, UGC-креатор и стилист">
+  <meta property="og:description" content="Снимаю для брендов одежду, предметку и образы. Работы, форматы, условия и как написать.">
+  <meta property="og:type" content="website">
+  <script>document.documentElement.className += ' js';</script>
   <link rel="preload" href="fonts/noto-serif-display-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/onest-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style/style.css">
@@ -16,339 +20,308 @@
   <a class="skip" href="#main">К содержанию</a>
 
   <header class="header" id="top">
-    <div class="wrap header__bar">
-      <a class="logo" href="#top" aria-label="Екатерина Захарчук, на главную">Е. Захарчук</a>
-      <nav class="nav" id="nav" aria-label="Основная навигация">
+    <div class="container header__bar">
+      <a class="wordmark" href="#top">Катя Захарчук</a>
+
+      <nav class="nav" aria-label="Основная навигация">
         <a class="nav__link" href="#work">Работы</a>
-        <a class="nav__link" href="#services">Услуги</a>
-        <a class="nav__link" href="#learn">Обучение</a>
-        <a class="nav__link" href="#reviews">Отзывы</a>
-        <a class="nav__link" href="#faq">Вопросы</a>
+        <a class="nav__link" href="#formats">Форматы</a>
+        <a class="nav__link" href="#terms">Условия</a>
+        <a class="nav__link" href="#about">Обо мне</a>
       </nav>
-      <a class="btn btn--bone header__cta" href="#contact">Записаться</a>
-      <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">
-        <span></span><span></span>
-      </button>
+
+      <a class="btn btn--outline header__dm js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать</a>
+
+      <details class="menu">
+        <summary class="menu__btn">Меню</summary>
+        <div class="menu__panel">
+          <a href="#work">Работы</a>
+          <a href="#formats">Форматы</a>
+          <a href="#terms">Условия</a>
+          <a href="#about">Обо мне</a>
+        </div>
+      </details>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- HERO -->
+    <!-- ПЕРВЫЙ ЭКРАН: контактный лист -->
     <section class="hero">
-      <div class="wrap">
-        <div class="hero__top">
-          <p class="cap">(ugc · креатор · стилист)</p>
-          <p class="cap">Петербург, Нячанг</p>
-        </div>
-
-        <h1 class="hero__name">
-          <span>Екатерина</span>
-          <span>Захарчук</span>
-        </h1>
-
-        <div class="hero__bottom">
-          <p class="hero__lead">Со мной вдохновляйся, наряжайся и&nbsp;снимай. Не скучные образы и идеи контента для брендов.</p>
-          <div class="hero__actions">
-            <a class="btn btn--red" href="#contact">Бесплатная диагностика</a>
-            <a class="btn btn--line" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener">Instagram</a>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1 class="hero__h1">Снимаю для брендов одежду, предметку и&nbsp;образы</h1>
+          <p class="hero__lead">Катя Захарчук, UGC-креатор и&nbsp;стилист. Нячанг и&nbsp;Петербург.</p>
+          <div class="hero__buttons">
+            <a class="btn btn--primary js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ</a>
+            <a class="btn btn--outline" href="#work">Смотреть примеры</a>
+          </div>
+          <div class="hero__facts">
+            <p>Отвечаю пн–пт,&nbsp;12:00–20:00.</p>
+            <p>Принимаю предложения с&nbsp;доставкой зарубеж или от&nbsp;брендов, которые находятся во&nbsp;Вьетнаме.</p>
+            <p>Цены и&nbsp;права на&nbsp;использование пришлю по&nbsp;запросу.</p>
+          </div>
+          <div class="hero__brands">
+            <p class="cap">(в профиле на Behance)</p>
+            <p class="brands">THE SELECT, PIMS, TOPTOP, LOOKONLINE</p>
           </div>
         </div>
-      </div>
 
-      <div class="strip" aria-label="Кадры из ленты">
-        <div class="strip__track">
-          <img src="images/work/portrait-blouse.jpg" width="356" height="393" alt="Екатерина в белой блузе с корсетом, портрет">
-          <img src="images/work/shutter.jpg" width="356" height="393" alt="Чёрная футболка, шорты и ботинки у металлических жалюзи">
-          <img src="images/work/corset-clutch.jpg" width="356" height="393" alt="Чёрный корсет и белая юбка, клатч в руках">
-          <img src="images/work/cover-ugc.jpg" width="356" height="393" alt="Обложка «UGC, который я снимала летом»: телефон с улыбающимся лицом в больших очках">
-          <img src="images/work/flatlay-hat.jpg" width="356" height="393" alt="Раскладка: чёрная шляпа, белая рубашка, шорты и бусы">
-          <img src="images/work/flatlay-tee.jpg" width="356" height="393" alt="Раскладка: белая футболка, очки, сумка">
-          <img src="images/work/pavilion.jpg" width="356" height="393" alt="Чёрное платье, беседка в парке">
-          <img src="images/work/corset-blouse.jpg" width="356" height="393" alt="Блуза с корсетом и солнцезащитные очки на фоне деревянных дверей">
-          <img src="images/work/portrait-blouse.jpg" width="356" height="393" alt="" aria-hidden="true">
-          <img src="images/work/shutter.jpg" width="356" height="393" alt="" aria-hidden="true">
-          <img src="images/work/corset-clutch.jpg" width="356" height="393" alt="" aria-hidden="true">
-          <img src="images/work/cover-ugc.jpg" width="356" height="393" alt="" aria-hidden="true">
-          <img src="images/work/flatlay-hat.jpg" width="356" height="393" alt="" aria-hidden="true">
-          <img src="images/work/flatlay-tee.jpg" width="356" height="393" alt="" aria-hidden="true">
-          <img src="images/work/pavilion.jpg" width="356" height="393" alt="" aria-hidden="true">
-          <img src="images/work/corset-blouse.jpg" width="356" height="393" alt="" aria-hidden="true">
-        </div>
+        <figure class="fr" style="--i:0"><img src="images/work/portrait-blouse.jpg" width="356" height="393" alt="Портрет в белой блузе с чёрным корсетом" fetchpriority="high"></figure>
+        <figure class="fr" style="--i:1"><img src="images/work/black-coat.jpg" width="356" height="393" alt="Чёрное пальто и высокие сапоги, образ на уличном стуле"></figure>
+        <figure class="fr" style="--i:2"><img src="images/work/flatlay-tee.jpg" width="356" height="393" alt="Белая футболка, украшения и сумка, вид сверху"></figure>
+        <figure class="fr" style="--i:3"><img src="images/work/garden-skirt.jpg" width="356" height="393" alt="Чёрная объёмная юбка и топ у канала в саду"></figure>
+        <figure class="fr" style="--i:4"><img src="images/work/corset-clutch.jpg" width="356" height="393" alt="Корсет, белая юбка и чёрный клатч"></figure>
+        <figure class="fr fr--cap" style="--i:5">
+          <img src="images/work/perfumes.jpg" width="356" height="393" alt="Флаконы парфюма на атласе">
+          <svg class="loop" viewBox="0 0 120 130" aria-hidden="true" focusable="false">
+            <path class="loop__a" pathLength="1" d="M26 12 C52 2 96 6 110 32 C122 56 114 98 94 114 C72 130 28 126 12 102 C-2 80 4 38 26 18 C46 2 88 4 108 26"/>
+            <path class="loop__b" pathLength="1" d="M34 16 C56 8 92 12 104 34"/>
+          </svg>
+          <figcaption class="fr__cap fr__cap--loop cap">(предметку тоже)</figcaption>
+        </figure>
+        <figure class="fr" style="--i:6"><img src="images/work/trench.jpg" width="356" height="393" alt="Тренч, белый топ и бордовые брюки" loading="lazy"></figure>
+        <figure class="fr fr--cap" style="--i:7">
+          <img src="images/work/red-dress.jpg" width="356" height="393" alt="Красное платье у каменной ванны" loading="lazy">
+          <figcaption class="fr__cap cap">(красное редко)</figcaption>
+        </figure>
+        <figure class="fr" style="--i:8"><img src="images/work/steps.jpg" width="356" height="393" alt="Белая блуза и чёрные сапоги на каменных ступенях" loading="lazy"></figure>
+        <figure class="fr fr--tab" style="--i:9"><img src="images/work/blazer.jpg" width="356" height="393" alt="Чёрный жакет, широкие брюки и ботинки" loading="lazy"></figure>
+        <figure class="fr fr--tab" style="--i:10"><img src="images/work/phone-hand.jpg" width="356" height="393" alt="Рука с телефоном на белой простыне" loading="lazy"></figure>
+        <figure class="fr fr--tab" style="--i:11"><img src="images/work/black-sleeves.jpg" width="356" height="393" alt="Широкие чёрные рукава, кольца и сумка" loading="lazy"></figure>
+        <figure class="fr fr--desk" style="--i:12"><img src="images/work/hat-bag.jpg" width="356" height="393" alt="Белая рубашка и чёрная сумка на фоне серой ставни" loading="lazy"></figure>
+        <figure class="fr fr--desk" style="--i:13"><img src="images/work/pavilion.jpg" width="356" height="393" alt="Образ в чёрном в беседке" loading="lazy"></figure>
+
+        <p class="sheet-cap cap">(не скучные образы и идеи контента)</p>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="about section section--bone" id="about">
-      <div class="wrap about__grid">
-        <h2 class="label">Обо мне</h2>
-
-        <p class="about__lead">Снимаю контент для брендов, собираю образы и учу делать то&nbsp;же&nbsp;самое на&nbsp;телефон.</p>
-
-        <div class="about__text">
-          <p>Работала с мастерами бьюти-сферы, стилистами, со сферой моды, а также с кафе, ресторанами и флористами.</p>
-          <p>С мая 2022 я учитель и наставник. Выпустила обучение по видеомейкингу и по созданию продающего контента через личный бренд и продвижение.</p>
+    <!-- ПРИМЕРЫ РАБОТ -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="h2" id="work-h">Примеры работ для брендов</h2>
+            <p class="cap">(12 проектов с моего Behance)</p>
+          </div>
+          <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance</a>
         </div>
 
-        <div class="about__brands">
-          <h3 class="label">С кем работала</h3>
-          <ul class="brands">
-            <li>OffWhite</li>
-            <li>Stella McCartney</li>
-            <li>THE SELECT</li>
-            <li>PIMS</li>
-            <li>TOPTOP</li>
-            <li>LOOKONLINE</li>
-            <li>Revolte</li>
-            <li>LaLama</li>
-            <li>Murashka</li>
+        <div class="group">
+          <p class="cap group__cap">(одежда)</p>
+          <ul class="cases">
+            <li class="case">
+              <img src="images/cases/revolte.jpg" width="808" height="632" alt="Белая рубашка с корсетным поясом и юбка, кейс Revolte" loading="lazy">
+              <p class="case__name">Revolte</p><p class="case__fmt">UGC для бренда одежды</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/lorer.jpg" width="808" height="632" alt="Чёрная юбка в клетку и чёрные гольфы на деревянной лестнице, кейс LORER" loading="lazy">
+              <p class="case__name">LORER</p><p class="case__fmt">UGC-контент для бренда одежды</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/clothes.jpg" width="808" height="632" alt="Чёрный жакет на фоне камня" loading="lazy">
+              <p class="case__name">Одежда</p><p class="case__fmt">UGC</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/clothing-brand.jpg" width="808" height="632" alt="Белая блуза со шнуровкой и коричневая сумка" loading="lazy">
+              <p class="case__name">Бренд одежды</p><p class="case__fmt">UGC для бренда</p>
+            </li>
           </ul>
         </div>
+
+        <div class="group">
+          <p class="cap group__cap">(бельё, купальники, сумки)</p>
+          <ul class="cases">
+            <li class="case">
+              <img src="images/cases/lalama.jpg" width="808" height="632" alt="Красное бельё на белой стене, кейс LaLama" loading="lazy">
+              <p class="case__name">LaLama</p><p class="case__fmt">UGC, бельё</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/kojinka.jpg" width="808" height="632" alt="Бежевая сумка в руке, кейс Kojinka" loading="lazy">
+              <p class="case__name">Kojinka</p><p class="case__fmt">UGC для бренда сумок</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/swimwear.jpg" width="808" height="632" alt="Купальник и чёрный жакет у скалы" loading="lazy">
+              <p class="case__name">Купальники</p><p class="case__fmt">UGC</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/creative-dresses.jpg" width="808" height="632" alt="Серое платье с кружевом и надпись «бельевые платья»" loading="lazy">
+              <p class="case__name">Бельевые платья</p><p class="case__fmt">Креатив UGC</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <p class="cap group__cap">(предметка, food, коллажи, нейро)</p>
+          <ul class="cases">
+            <li class="case">
+              <img src="images/cases/objects.jpg" width="808" height="632" alt="Предметная съёмка: украшения и аксессуары на тёмном фоне" loading="lazy">
+              <p class="case__name">Предметка</p><p class="case__fmt">UGC, предметные фото</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/food.jpg" width="808" height="632" alt="Бокал на тёмном фоне, вид сверху" loading="lazy">
+              <p class="case__name">Food</p><p class="case__fmt">UGC</p>
+            </li>
+            <li class="case">
+              <img src="images/cases/collages.jpg" width="808" height="632" alt="Коллаж: образ в тренче и палетка теней" loading="lazy">
+              <p class="case__name">Коллажи</p><p class="case__fmt">Креативные коллажи</p>
+            </li>
+            <li class="case case--ai">
+              <div class="case__media">
+                <img src="images/cases/murashka-ai.jpg" width="808" height="632" alt="Изображение создано нейросетью: платье и лошадь на берегу, кейс Murashka" loading="lazy">
+                <span class="badge">нейро</span>
+              </div>
+              <p class="case__name">Murashka</p><p class="case__fmt">Нейро-UGC: изображения созданы нейросетью, это не фотосъёмка</p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="work__foot"><a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance</a></p>
       </div>
     </section>
 
-    <!-- WORK -->
-    <section class="work section section--black" id="work">
-      <div class="wrap">
-        <div class="head">
-          <h2 class="h2">Работы</h2>
-          <p class="cap">(кадры из ленты @zezekate.e)</p>
-        </div>
-
-        <ul class="grid">
-          <li><img src="images/work/steps.jpg" width="356" height="393" alt="Белая блуза и чёрные сапоги на каменных ступенях" loading="lazy"></li>
-          <li><img src="images/work/corset-blouse.jpg" width="356" height="393" alt="Блуза с корсетом и очки" loading="lazy"></li>
-          <li><img src="images/work/blazer.jpg" width="356" height="393" alt="Чёрный жакет и брюки, сидит на асфальте" loading="lazy"></li>
-          <li><img src="images/work/trench.jpg" width="356" height="393" alt="Бежевый тренч и белая футболка" loading="lazy"></li>
-          <li><img src="images/work/red-dress.jpg" width="356" height="393" alt="Красное платье у каменной ванны в саду" loading="lazy"></li>
-          <li><img src="images/work/white-set.jpg" width="356" height="393" alt="Белая футболка, белые брюки, чёрная сумка" loading="lazy"></li>
-          <li><img src="images/work/hat-bag.jpg" width="356" height="393" alt="Белая рубашка, шляпа и большая чёрная сумка" loading="lazy"></li>
-          <li><img src="images/work/black-sleeves.jpg" width="356" height="393" alt="Чёрная блуза с широкими рукавами, кольца и маникюр" loading="lazy"></li>
-          <li><img src="images/work/perfumes.jpg" width="356" height="393" alt="Парфюм на белом сатине" loading="lazy"></li>
-          <li><img src="images/work/beach-dress.jpg" width="356" height="393" alt="Молочное платье с воланами у моря" loading="lazy"></li>
-          <li><img src="images/work/garden-skirt.jpg" width="356" height="393" alt="Чёрный топ и юбка у воды в тропическом саду" loading="lazy"></li>
-          <li><img src="images/work/black-coat.jpg" width="356" height="393" alt="Чёрное пальто и сапоги, металлический стул" loading="lazy"></li>
+    <!-- ФОРМАТЫ -->
+    <section class="section" id="formats" aria-labelledby="formats-h">
+      <div class="container formats">
+        <h2 class="h2" id="formats-h">Форматы</h2>
+        <ul class="formats__list">
+          <li class="format">
+            <img class="format__img" src="images/work/white-set.jpg" width="356" height="393" alt="" loading="lazy">
+            <div><h3 class="h3">Образы на мне</h3><p class="format__line">Одежда, бельё, купальники, сумки.</p></div>
+          </li>
+          <li class="format">
+            <img class="format__img" src="images/work/flatlay-hat.jpg" width="356" height="393" alt="" loading="lazy">
+            <div><h3 class="h3">Предметка и flat lay</h3><p class="format__line">Парфюм, украшения, аксессуары.</p></div>
+          </li>
+          <li class="format">
+            <img class="format__img" src="images/work/phone-flatlay.jpg" width="356" height="393" alt="" loading="lazy">
+            <div><h3 class="h3">Видео и reels</h3><p class="format__line">Видео под ваш товар.</p></div>
+          </li>
+          <li class="format">
+            <img class="format__img" src="images/work/corset-blouse.jpg" width="356" height="393" alt="" loading="lazy">
+            <div><h3 class="h3">Стилизация</h3><p class="format__line">Подбираю образ под ваш товар.</p></div>
+          </li>
+          <li class="format">
+            <img class="format__img" src="images/cases/collages.jpg" width="808" height="632" alt="" loading="lazy">
+            <div><h3 class="h3">Креативные коллажи</h3><p class="format__line">Коллажи с вашим товаром.</p></div>
+          </li>
+          <li class="format">
+            <img class="format__img" src="images/cases/food.jpg" width="808" height="632" alt="" loading="lazy">
+            <div><h3 class="h3">Food</h3><p class="format__line">Еда и напитки.</p></div>
+          </li>
+          <li class="format">
+            <img class="format__img" src="images/cases/murashka-ai.jpg" width="808" height="632" alt="" loading="lazy">
+            <div><h3 class="h3">Нейро-UGC</h3><p class="format__line">Изображения создаёт нейросеть, это не фотосъёмка.</p></div>
+          </li>
         </ul>
-
-        <div class="work__links">
-          <a class="btn btn--line-light" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener">@zezekate.e</a>
-          <a class="btn btn--line-light" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener">Behance</a>
-        </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="services section section--bone" id="services">
-      <div class="wrap">
-        <div class="head">
-          <h2 class="h2">Услуги</h2>
-          <p class="cap cap--hover">(наведите на строку, чтобы увидеть кадр)</p>
+    <!-- УСЛОВИЯ И ПОРЯДОК РАБОТЫ -->
+    <section class="section" id="terms" aria-labelledby="terms-h">
+      <div class="container">
+        <h2 class="h2" id="terms-h">Условия и порядок работы</h2>
+
+        <div class="statements">
+          <p class="statement">Отвечаю пн–пт,&nbsp;12:00–20:00.</p>
+          <p class="statement">Принимаю предложения с&nbsp;доставкой зарубеж или от&nbsp;брендов, которые находятся во&nbsp;Вьетнаме.</p>
+          <p class="statement">Цены и&nbsp;права на&nbsp;использование пришлю по&nbsp;запросу.</p>
         </div>
 
-        <ul class="svc" id="svc">
-          <li class="svc__row" data-img="images/work/red-dress.jpg">
-            <a class="svc__link" href="#contact">
-              <img class="svc__thumb" src="images/work/red-dress.jpg" width="356" height="393" alt="" loading="lazy">
-              <span class="svc__title">Креативная съёмка видео</span>
-              <span class="svc__more">(подробнее)</span>
-            </a>
-          </li>
-          <li class="svc__row" data-img="images/work/blazer.jpg">
-            <a class="svc__link" href="#contact">
-              <img class="svc__thumb" src="images/work/blazer.jpg" width="356" height="393" alt="" loading="lazy">
-              <span class="svc__title">Классическая съёмка видео</span>
-              <span class="svc__more">(подробнее)</span>
-            </a>
-          </li>
-          <li class="svc__row" data-img="images/work/cover-ugc.jpg">
-            <a class="svc__link" href="#contact">
-              <img class="svc__thumb" src="images/work/cover-ugc.jpg" width="356" height="393" alt="" loading="lazy">
-              <span class="svc__title">Рилс под ключ</span>
-              <span class="svc__more">(подробнее)</span>
-            </a>
-          </li>
-          <li class="svc__row" data-img="images/work/flatlay-tee.jpg">
-            <a class="svc__link" href="#contact">
-              <img class="svc__thumb" src="images/work/flatlay-tee.jpg" width="356" height="393" alt="" loading="lazy">
-              <span class="svc__title">Съёмка контента для соцсетей</span>
-              <span class="svc__more">(подробнее)</span>
-            </a>
-          </li>
-          <li class="svc__row" data-img="images/work/phone-flatlay.jpg">
-            <a class="svc__link" href="#contact">
-              <img class="svc__thumb" src="images/work/phone-flatlay.jpg" width="356" height="393" alt="" loading="lazy">
-              <span class="svc__title">Монтаж из ваших материалов</span>
-              <span class="svc__more">(подробнее)</span>
-            </a>
-          </li>
-        </ul>
+        <h3 class="h3 steps__h">Как проходит работа</h3>
+        <ol class="steps">
+          <li class="step"><span class="step__n" aria-hidden="true">1</span><p>Пишете в&nbsp;директ <span class="nb">@pr.zezekate</span>: бренд, товар, что нужно.</p></li>
+          <li class="step"><span class="step__n" aria-hidden="true">2</span><p>Обсуждаем формат, срок и&nbsp;цену.</p></li>
+          <li class="step"><span class="step__n" aria-hidden="true">3</span><p>Отправляете товар.</p></li>
+          <li class="step"><span class="step__n" aria-hidden="true">4</span><p>Снимаю и&nbsp;показываю результат.</p></li>
+        </ol>
+        <p class="marking">Платные и&nbsp;бартерные размещения маркирую по&nbsp;закону: пометка «Реклама», данные рекламодателя и&nbsp;erid.</p>
       </div>
-      <img class="svc__preview" id="preview" alt="" aria-hidden="true">
     </section>
 
-    <!-- LEARN -->
-    <section class="learn section section--black" id="learn">
-      <div class="wrap">
-        <div class="head">
-          <h2 class="h2">Обучение</h2>
-          <p class="cap">(с мая 2022)</p>
+    <!-- ОБО МНЕ -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="container about">
+        <div class="about__text">
+          <h2 class="h2" id="about-h">Обо мне</h2>
+          <p class="lead">Я Екатерина Захарчук, UGC-креатор и&nbsp;стилист. Нячанг и&nbsp;Петербург. На&nbsp;Behance с&nbsp;2017&nbsp;года. С&nbsp;2022&nbsp;года учила мобильной съёмке, а&nbsp;сейчас в&nbsp;основном снимаю для брендов.</p>
         </div>
 
-        <div class="courses">
-          <a class="course" href="#contact">
-            <img src="images/work/phone-flatlay.jpg" width="356" height="393" alt="" loading="lazy">
-            <span class="course__body">
-              <span class="course__tag">(курс · 1,5 месяца)</span>
-              <span class="course__title">Videobomb: обучение видеосъёмке</span>
-              <span class="course__text">Мобильная съёмка с нуля. Подойдёт и владельцам iPhone, и владельцам Android.</span>
-            </span>
-          </a>
-
-          <a class="course" href="#contact">
-            <img src="images/work/portrait-robe.jpg" width="356" height="393" alt="" loading="lazy">
-            <span class="course__body">
-              <span class="course__tag">(менторство)</span>
-              <span class="course__title">Заработок и продвижение для экспертов</span>
-            </span>
-          </a>
-
-          <a class="course" href="#contact">
-            <img src="images/work/phone-hand.jpg" width="356" height="393" alt="" loading="lazy">
-            <span class="course__body">
-              <span class="course__tag">(один на один)</span>
-              <span class="course__title">Консультации</span>
-            </span>
-          </a>
-
-          <div class="course course--soon">
-            <span class="course__body">
-              <span class="course__tag">(скоро)</span>
-              <span class="course__title">Здесь появится новый продукт</span>
-            </span>
+        <div class="about__frames">
+          <div class="about__row">
+            <figure class="fr-static"><img src="images/work/portrait-robe.jpg" width="356" height="393" alt="Образ в чёрном халате с оранжевой сумочкой" loading="lazy"></figure>
+            <figure class="fr-static"><img src="images/work/beach-dress.jpg" width="356" height="393" alt="Белое платье с воланами у моря" loading="lazy"></figure>
+            <figure class="fr-static"><img src="images/work/shutter.jpg" width="356" height="393" alt="Чёрная футболка, шорты и ботинки у серой ставни" loading="lazy"></figure>
           </div>
+          <p class="cap">(со мной вдохновляйся, наряжайся и снимай)</p>
         </div>
+
+        <ul class="about__links">
+          <li>
+            <a class="link link--tap" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener noreferrer">Instagram* @zezekate.e</a>
+            <p class="cap">(личный блог)</p>
+          </li>
+          <li>
+            <a class="link link--tap" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Instagram* @pr.zezekate</a>
+            <p class="cap">(для сотрудничеств)</p>
+          </li>
+          <li>
+            <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Behance</a>
+            <p class="cap">(все проекты)</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- REVIEWS -->
-    <section class="reviews section section--bone" id="reviews">
-      <div class="wrap">
-        <div class="head">
-          <h2 class="h2">Отзывы</h2>
-          <p class="cap">(из переписки с клиентами)</p>
+    <!-- КОНТАКТ -->
+    <section class="section" id="contact" aria-labelledby="contact-h">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2 class="h2" id="contact-h">Напишите в директ</h2>
+          <p class="lead">Мой рабочий аккаунт для сотрудничеств в&nbsp;Instagram*: <span class="nb">@pr.zezekate</span>. Отвечаю пн–пт,&nbsp;12:00–20:00.</p>
+          <p class="cap">(формы нет, пишите в директ)</p>
+          <div class="contact__buttons">
+            <a class="btn btn--primary js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ</a>
+            <button class="btn btn--outline" id="copy-brief" type="button" hidden>Скопировать шаблон брифа</button>
+          </div>
+          <p class="sr-only" id="brief-live" aria-live="polite"></p>
         </div>
 
-        <div class="quotes">
-          <blockquote class="quote quote--a">
-            <p>Девочки, с вами очень приятно работать. Я очень ценю вашу готовность идти на встречу, активность и понимание. С вами легко работать.</p>
-            <p>Вы слышите и максимально учитываете обратную связь. Плюс у вас есть очень важное качество — адекватность.</p>
-          </blockquote>
-
-          <blockquote class="quote quote--b">
-            <p>Спасибо тебе за проделанную работу! Очень рада, что смогла присутствовать на съёмке и посмотреть весь процесс лично.</p>
-            <p>Ты та, на которую можно положиться в этой работе на 100%. Работала быстро и уверенно. Видео получились разнообразными и интересными.</p>
-          </blockquote>
-
-          <blockquote class="quote quote--c">
-            <p>Катюша, хочу отослать тебе лучи благодарности за твою работу и как ты подходишь к процессу. Драйв и монтаж просто великолепен, получила много отклика на видео, которое ты для меня сделала.</p>
-          </blockquote>
-
-          <blockquote class="quote quote--d">
-            <p>Мне безумно нравится! Ты умничка, я ни на секунду не пожалела, что работаю с тобой.</p>
-          </blockquote>
-
-          <blockquote class="quote quote--e">
-            <p>Тебе спасибо огромнейшее. Ты умничка. Видео — огонь!</p>
-          </blockquote>
+        <div class="contact__note">
+          <p class="cap">(шаблон брифа, можно вставить в директ)</p>
+          <div class="note" id="brief">
+            <p>Привет, Катя!</p>
+            <p>Меня зовут: ______</p>
+            <p>Бренд: ______</p>
+            <p>Что хотим снять: ______</p>
+            <p>Формат (фото, видео, предметка, образы): ______</p>
+            <p>Нужно к (дата): ______</p>
+            <p>Товар отправим (как и куда): ______</p>
+            <p>Где будем использовать (соцсети, реклама, сайт): ______</p>
+          </div>
+          <p><a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Все проекты на Behance</a></p>
         </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq section section--black" id="faq">
-      <div class="wrap faq__grid">
-        <h2 class="h2 faq__title">Частые вопросы</h2>
-
-        <div class="faq__list">
-          <details class="qa">
-            <summary>Как производится оплата услуг и обучения?</summary>
-            <p>Оплата безналичная, предварительно составляем договор. Для компаний и юрлиц можно выставить счёт.</p>
-          </details>
-          <details class="qa">
-            <summary>Есть ли рассрочка на обучение?</summary>
-            <p>Да. Внутренняя рассрочка через меня до 3–4 месяцев, внешняя через банк на 6, 10 или 12 месяцев.</p>
-          </details>
-          <details class="qa">
-            <summary>Сколько стоит обучение?</summary>
-            <p>Обучение по видеосъёмке Videobomb идёт 1,5 месяца. Есть два тарифа: Middle School и You R High &amp; The Best.</p>
-          </details>
-          <details class="qa">
-            <summary>Какую технику вы используете для съёмки?</summary>
-            <p>Снимаю на мобильный телефон, iPhone 14 Pro Max. Обучение тоже построено на мобильной съёмке, подойдёт и iPhone, и Android.</p>
-          </details>
-          <details class="qa">
-            <summary>Кому подойдёт обучение?</summary>
-            <ul>
-              <li>Новичкам, которые ищут себя и своё дело</li>
-              <li>Мамам в декрете для дополнительного заработка и прибыльного хобби</li>
-              <li>СММ-специалистам, чтобы прокачать навыки и вырасти в чеке</li>
-              <li>Предпринимателям для развития бизнеса</li>
-            </ul>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact section section--bone" id="contact">
-      <div class="wrap contact__grid">
-        <div class="contact__copy">
-          <h2 class="contact__title">Запишитесь на бесплатную диагностику и получите подарок</h2>
-
-          <form class="form" method="post" action="./mail.php">
-            <div class="field">
-              <label class="field__label" for="f-name">Имя</label>
-              <input class="field__input" type="text" id="f-name" name="name" autocomplete="name" required>
-            </div>
-            <div class="field">
-              <label class="field__label" for="f-tel">Телефон</label>
-              <input class="field__input" type="tel" id="f-tel" name="tel" autocomplete="tel" required>
-            </div>
-            <label class="agree" for="f-agree">
-              <input type="checkbox" id="f-agree" name="agree" required>
-              <span>Я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
-            </label>
-            <button class="btn btn--red form__btn" type="submit">Записаться</button>
-          </form>
-
-          <p class="contact__pr">
-            <span class="cap">(для брендов)</span>
-            <span>Предложения по сотрудничеству принимаю в <a href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener">@pr.zezekate</a>, пн–пт с 12:00 до 20:00. Рассматриваю варианты с доставкой за рубеж и во Вьетнам.</span>
-          </p>
-        </div>
-
-        <figure class="contact__photo">
-          <img src="images/work/trench.jpg" width="356" height="393" alt="Екатерина в бежевом тренче, руки подняты к волосам" loading="lazy">
-        </figure>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="wrap">
-      <h2 class="footer__title">Связаться со&nbsp;мной</h2>
-      <ul class="footer__links">
-        <li><a href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener"><span>Instagram</span><small>@zezekate.e</small></a></li>
-        <li><a href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener"><span>Instagram для брендов</span><small>@pr.zezekate</small></a></li>
-        <li><a href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener"><span>Behance</span><small>ekaterizaharch</small></a></li>
-        <li><a href="#"><span>Telegram</span><small>написать</small></a></li>
-        <li><a href="#"><span>VK</span><small>написать</small></a></li>
-        <li><a href="#"><span>WhatsApp</span><small>написать</small></a></li>
-      </ul>
-      <p class="footer__fine cap">© 2026 Екатерина Захарчук</p>
+    <div class="container">
+      <p class="footer__links">
+        <a class="link link--tap" href="https://www.instagram.com/zezekate.e/" target="_blank" rel="noopener noreferrer">Instagram* @zezekate.e</a>
+        <a class="link link--tap" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Instagram* @pr.zezekate</a>
+        <a class="link link--tap" href="https://www.behance.net/ekaterizaharch" target="_blank" rel="noopener noreferrer">Behance</a>
+      </p>
+      <p class="cap">Названия брендов приведены, чтобы указать выполненные работы. Права на&nbsp;них принадлежат правообладателям, упоминание не&nbsp;означает рекомендации или одобрения.</p>
+      <p class="cap">* Instagram принадлежит компании Meta, признанной в&nbsp;РФ экстремистской организацией и&nbsp;запрещённой.</p>
+      <p class="cap">© 2026 Екатерина Захарчук</p>
     </div>
   </footer>
+
+  <div class="mbar" id="mbar">
+    <a class="btn btn--primary btn--block js-dm" href="https://www.instagram.com/pr.zezekate/" target="_blank" rel="noopener noreferrer">Написать в директ</a>
+  </div>
 
   <script src="scripts/script.js"></script>
 </body>

@@ -3,80 +3,104 @@
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Шапка: линия появляется после прокрутки
-  var header = document.querySelector('.header');
-  function onScroll() {
-    header.classList.toggle('is-stuck', window.scrollY > 8);
-  }
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-
-  // Мобильное меню
-  var burger = document.querySelector('.burger');
-  var nav = document.getElementById('nav');
-  function setMenu(open) {
-    burger.setAttribute('aria-expanded', String(open));
-    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-    nav.classList.toggle('is-open', open);
-  }
-  burger.addEventListener('click', function () {
-    setMenu(burger.getAttribute('aria-expanded') !== 'true');
-  });
-  nav.addEventListener('click', function (e) {
-    if (e.target.closest('a')) setMenu(false);
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') setMenu(false);
-  });
-
-  // Услуги: кадр следует за курсором
-  var list = document.getElementById('svc');
-  var preview = document.getElementById('preview');
-  var canHover = window.matchMedia('(hover: hover) and (min-width: 861px)');
-  if (list && preview && canHover.matches && !reduce) {
-    var x = 0, y = 0, tx = 0, ty = 0, raf = 0;
-
-    function tick() {
-      x += (tx - x) * 0.18;
-      y += (ty - y) * 0.18;
-      preview.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0) translate(-50%,-50%)';
-      raf = Math.abs(tx - x) + Math.abs(ty - y) > 0.5 ? requestAnimationFrame(tick) : 0;
-    }
-
-    list.addEventListener('mouseover', function (e) {
-      var row = e.target.closest('.svc__row');
-      if (!row) return;
-      var src = row.getAttribute('data-img');
-      if (preview.getAttribute('src') !== src) preview.setAttribute('src', src);
-      preview.classList.add('is-on');
+  // Мобильное меню: закрывается по ссылке, Escape и клику мимо
+  var menu = document.querySelector('.menu');
+  if (menu) {
+    var summary = menu.querySelector('summary');
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest('.menu__panel a')) menu.open = false;
     });
-    list.addEventListener('mouseleave', function () {
-      preview.classList.remove('is-on');
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.open) {
+        menu.open = false;
+        if (summary) summary.focus();
+      }
     });
-    list.addEventListener('mousemove', function (e) {
-      if (!preview.classList.contains('is-on') && !raf) { x = e.clientX; y = e.clientY; }
-      tx = e.clientX + 120;
-      ty = e.clientY;
-      if (!raf) raf = requestAnimationFrame(tick);
+    document.addEventListener('click', function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
     });
   }
 
-  // Появление блоков при прокрутке. Без IntersectionObserver всё остаётся видимым.
-  if ('IntersectionObserver' in window && !reduce) {
-    var targets = document.querySelectorAll(
-      '.head, .about__lead, .about__text, .about__brands, .quote, .course, .faq__title, .qa, .contact__copy, .contact__photo, .footer__title'
-    );
+  // Нижняя кнопка на телефоне: видна, пока на экране нет кнопок героя и блока контакта
+  var bar = document.getElementById('mbar');
+  var heroButtons = document.querySelector('.hero__buttons');
+  var contact = document.getElementById('contact');
+  if (bar && heroButtons && contact && 'IntersectionObserver' in window) {
+    var seen = { hero: true, contact: false };
+    var mobile = window.matchMedia('(max-width: 719px)');
+
+    var setBar = function (on) {
+      bar.classList.toggle('is-on', on);
+      bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+      if (on) bar.removeAttribute('inert'); else bar.setAttribute('inert', '');
+    };
+    var update = function () {
+      setBar(mobile.matches && !seen.hero && !seen.contact);
+    };
+
+    setBar(false);
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
-        if (en.isIntersecting) {
-          en.target.classList.add('is-in');
-          io.unobserve(en.target);
-        }
+        if (en.target === heroButtons) seen.hero = en.isIntersecting;
+        if (en.target === contact) seen.contact = en.isIntersecting;
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-    targets.forEach(function (el) {
-      el.classList.add('reveal');
-      io.observe(el);
+      update();
+    }, { rootMargin: '-56px 0px 0px 0px' });
+    io.observe(heroButtons);
+    io.observe(contact);
+    if (mobile.addEventListener) mobile.addEventListener('change', update);
+  }
+
+  // Шаблон брифа: текст в буфер, видимый текст = буфер
+  var btn = document.getElementById('copy-brief');
+  var note = document.getElementById('brief');
+  var live = document.getElementById('brief-live');
+  if (btn && note) {
+    var label = btn.textContent;
+    var timer = 0;
+
+    var say = function (text, ms, announce) {
+      btn.textContent = text;
+      if (live && announce) live.textContent = announce;
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        btn.textContent = label;
+        if (live) live.textContent = '';
+      }, ms);
+    };
+    var briefText = function () {
+      return Array.prototype.map.call(note.querySelectorAll('p'), function (p) {
+        return p.textContent;
+      }).join('\n');
+    };
+    var selectNote = function () {
+      var range = document.createRange();
+      range.selectNodeContents(note);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    };
+    var fallback = function () {
+      selectNote();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+      if (ok) {
+        say('Скопировано', 2400, 'Шаблон брифа скопирован');
+      } else {
+        say('Выделите текст ниже', 4000);
+        note.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
+      }
+    };
+
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(briefText()).then(function () {
+          say('Скопировано', 2400, 'Шаблон брифа скопирован');
+        }, fallback);
+      } else {
+        fallback();
+      }
     });
   }
 })();
